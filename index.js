@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-const { user } = require('./models/index');
+const { User } = require('./models');
 
 const db = require('./db');
 
@@ -13,7 +13,7 @@ const db = require('./db');
 app.use(express.json());
 
 app.get('/', async (req, res) => {
-        let resultado = await usuarioModel.findAll();
+        let resultado = await User.findAll();
 
         res.json({resultado});
 })
