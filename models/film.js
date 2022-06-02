@@ -22,6 +22,7 @@ module.exports = (sequelize, DataTypes) => {
     release_date: DataTypes.STRING,
     adult: DataTypes.BOOLEAN,
     genre: DataTypes.STRING,
+    sinopsis: DataTypes.STRING,
     director: DataTypes.STRING
   }, {
     sequelize,

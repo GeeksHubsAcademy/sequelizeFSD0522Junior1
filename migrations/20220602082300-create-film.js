@@ -23,6 +23,9 @@ module.exports = {
       genre: {
         type: Sequelize.STRING
       },
+      sinopsis: {
+        type: Sequelize.STRING
+      },
       director: {
         type: Sequelize.STRING
       },

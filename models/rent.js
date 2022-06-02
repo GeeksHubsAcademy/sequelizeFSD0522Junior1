@@ -21,8 +21,8 @@ module.exports = (sequelize, DataTypes) => {
   };
   Rent.init({
     //Aqui he añadido los dos campos userId y filmId a mano porque son las claves foráneas
-    userId: DataTypes.UUID,
-    filmId: DataTypes.UUID,
+    userId: DataTypes.INTEGER,
+    filmId: DataTypes.INTEGER,
     return_date: DataTypes.STRING,
     price: DataTypes.INTEGER
   }, {
